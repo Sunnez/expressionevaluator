@@ -12,7 +12,7 @@ def expression_evaluator(s):
     <operator> <expression> <expression>. """
     total = 0
     temp_list = list()
-    for item in s.split():
+    for item in s.strip().split():
         temp_list.append(item)
     
     if temp_list[0] == "+" or temp_list[0] == "-":
@@ -42,7 +42,7 @@ def main():
     while True:
         try:
             exp = input("Please enter an expression to be evaluated. The appropriate syntax is <operator> <expression> <expression>.\n")
-            if exp[0] == "+" or exp[0] == "-":
+            if exp.strip()[0] == "+" or exp.strip()[0] == "-":
                 break
         except Exception:
             print("Your expression is invalid! You must enter an appropriate operator first!\n Please try again!")
