@@ -61,6 +61,4 @@ class ExpressionEvaluatorTest(unittest.TestCase):
             expression_evaluator("1 + 2 3")
 
 
-if __name__ == '__main__':
-    # Note there is no main() This program contains only test cases.
-    unittest.main(exit=False, verbosity=2)
+main()
